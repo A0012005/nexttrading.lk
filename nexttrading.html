@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextTrading.lk - Import & Export Car Business</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #e60000;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .hero {
+      background: linear-gradient(to right, #e60000, #000000);
+      color: #ffffff;
+      padding: 100px 40px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h2 {
+      font-size: 50px;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    .hero p {
+      font-size: 22px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .hero::after {
+      content: url('https://www.svgrepo.com/show/503844/sports-car.svg');
+      position: absolute;
+      bottom: 10px;
+      right: 40px;
+      width: 160px;
+      height: auto;
+      opacity: 0.3;
+    }
+    .countries {
+      background: linear-gradient(to left, #fdf2f2, #fce8e8);
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .countries h3 {
+      color: #b30000;
+      font-size: 36px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    .countries ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .countries li {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 18px 35px;
+      border-radius: 30px;
+      font-size: 22px;
+      transition: transform 0.2s ease-in-out;
+    }
+    .countries li:hover {
+      transform: scale(1.05);
+      background-color: #e60000;
+    }
+    .contact-section {
+      background: #1a1a1a;
+      color: #ffffff;
+      text-align: center;
+      padding: 60px 40px;
+    }
+    .contact-section h3 {
+      font-size: 36px;
+      color: #e60000;
+      margin-bottom: 25px;
+    }
+    .contact-section p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+    .footer-note {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NextTrading.lk</h1>
+    <nav>
+      <a onclick="scrollToSection('hero')">Home</a>
+      <a onclick="scrollToSection('services')">Services</a>
+      <a onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h2>Worldwide Car Import & Export</h2>
+    <p>Driven by passion. Powered by trust. Delivering excellence from Thailand, Australia, Japan & UK to your doorstep in Sri Lanka.</p>
+  </section>
+
+  <section id="services" class="countries">
+    <h3>Trusted Global Sources</h3>
+    <ul>
+      <li>Thailand</li>
+      <li>Australia</li>
+      <li>Japan</li>
+      <li>United Kingdom</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h3>Let's Connect</h3>
+    <p><strong>Phone:</strong> +94 011 2589020</p>
+    <p><strong>Address:</strong> 40 3/3 De Krester Place, Colombo 4, Sri Lanka</p>
+    <p><strong>Email:</strong> nexttrading.lk@gmail.com</p>
+    <p class="footer-note">&copy; 2025 NextTrading.lk. All rights reserved.</p>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
